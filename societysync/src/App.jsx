@@ -1,6 +1,6 @@
 import { useState } from "react";
+import CommunityFeed from "./components/CommunityFeed";
 import ComplaintForm from "./components/ComplaintForm.jsx";
-import ComplaintCard from "./components/ComplaintCard.jsx";
 import "./App.css";
 
 function App() {
@@ -24,12 +24,7 @@ function App() {
       <ComplaintForm addComplaint={addComplaint} />
 
       <div className="complaints-container">
-        {complaints.map((complaint) => (
-          <ComplaintCard
-            key={complaint.id}
-            complaint={complaint}
-          />
-        ))}
+        <CommunityFeed complaints={complaints} />
       </div>
     </div>
   );
