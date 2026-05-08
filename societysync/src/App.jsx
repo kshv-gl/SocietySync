@@ -18,15 +18,21 @@ function App() {
     ]);
   };
 
+  // Feature 2: filter out complaint by id
+  const deleteComplaint = (id) => {
+    setComplaints(complaints.filter((c) => c.id !== id));
+  };
+
   return (
     <div className="app">
       <h1>SocietySync</h1>
-
       <ComplaintForm addComplaint={addComplaint} />
       <ComplaintCounter complaints={complaints} />
-
       <div className="complaints-container">
-        <CommunityFeed complaints={complaints} />
+        <CommunityFeed
+          complaints={complaints}
+          deleteComplaint={deleteComplaint}
+        />
       </div>
     </div>
   );

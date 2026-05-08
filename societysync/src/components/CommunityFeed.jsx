@@ -1,14 +1,14 @@
 import ComplaintCard from "./ComplaintCard";
 
-function CommunityFeed({ complaints }) {
+function CommunityFeed({ complaints, deleteComplaint }) {
   return (
     <div>
       <h2>Community Feed</h2>
-
-      {complaints.map((complaint, index) => (
+      {complaints.map((complaint) => (
         <ComplaintCard
-          key={index}
+          key={complaint.id}
           complaint={complaint}
+          deleteComplaint={deleteComplaint}
         />
       ))}
     </div>
