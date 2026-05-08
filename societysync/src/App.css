@@ -86,3 +86,35 @@ h1 {
 .Cleaning {
   background: #16a34a;
 }
+
+.complaint-counter {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 10px;
+  color: white;
+  min-width: 80px;
+}
+
+.counter-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.counter-label {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.counter-box.total      { background: #1e3a8a; }
+.counter-box.pending    { background: #dc2626; }
+.counter-box.inprogress { background: #f59e0b; }
+.counter-box.resolved   { background: #16a34a; }
