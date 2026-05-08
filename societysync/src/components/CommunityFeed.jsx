@@ -4,7 +4,7 @@ import FilterByDepartment from "./FilterByDepartment";
 import FilterByStatus from "./FilterByStatus";
 import SearchBar from "./SearchBar";
 
-function CommunityFeed({ complaints, deleteComplaint }) {
+function CommunityFeed({ complaints, deleteComplaint, updateStatus }) {
   const [selectedDepartment, setSelectedDepartment] = useState("All");
   const [selectedStatus, setSelectedStatus] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
@@ -33,6 +33,7 @@ function CommunityFeed({ complaints, deleteComplaint }) {
           key={complaint.id}
           complaint={complaint}
           deleteComplaint={deleteComplaint}
+          updateStatus={updateStatus}
         />
       ))}
     </div>

@@ -1,7 +1,8 @@
 import DeleteButton from "./DeleteButton";
 import UpvoteButton from "./UpvoteButton";
+import StatusCycleButton from "./StatusCycleButton";
 
-function ComplaintCard({ complaint, deleteComplaint }) {
+function ComplaintCard({ complaint, deleteComplaint, updateStatus }) {
   return (
     <div className="complaint-card">
       <h2>{complaint.title}</h2>
@@ -22,6 +23,10 @@ function ComplaintCard({ complaint, deleteComplaint }) {
 
       <div style={{ marginTop: "10px", display: "flex", gap: "10px" }}>
         <UpvoteButton />
+        <StatusCycleButton
+          status={complaint.status || "Pending"}
+          onStatusChange={(newStatus) => updateStatus(complaint.id, newStatus)}
+        />
         <DeleteButton id={complaint.id} deleteComplaint={deleteComplaint} />
       </div>
     </div>

@@ -14,13 +14,21 @@ function App() {
         ...complaint,
         id: Date.now(),
         timestamp: new Date().toLocaleString(),
+        status: "Pending",
+        upvotes: 0,
       },
     ]);
   };
 
-  // Feature 2: filter out complaint by id
   const deleteComplaint = (id) => {
     setComplaints(complaints.filter((c) => c.id !== id));
+  };
+
+  // Feature 4: cycle status of a complaint
+  const updateStatus = (id, newStatus) => {
+    setComplaints(complaints.map((c) =>
+      c.id === id ? { ...c, status: newStatus } : c
+    ));
   };
 
   return (
@@ -32,6 +40,7 @@ function App() {
         <CommunityFeed
           complaints={complaints}
           deleteComplaint={deleteComplaint}
+          updateStatus={updateStatus}
         />
       </div>
     </div>
