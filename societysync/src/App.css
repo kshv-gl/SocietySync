@@ -11,10 +11,38 @@ body {
   padding: 20px;
 }
 
-h1 {
-  text-align: center;
-  color: #1e3a8a;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
+
+.navbar h2 {
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 10px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
 
 .complaint-form {
   display: flex;
@@ -43,6 +71,8 @@ h1 {
   cursor: pointer;
 }
 
+
+
 .complaint-card {
   background: white;
   padding: 20px;
@@ -56,12 +86,6 @@ h1 {
   margin-top: 10px;
 }
 
-.department {
-  background: #dbeafe;
-  padding: 5px 10px;
-  border-radius: 20px;
-  color: #1e40af;
-}
 
 
 .department {
@@ -86,6 +110,8 @@ h1 {
 .Cleaning {
   background: #16a34a;
 }
+
+
 
 .complaint-counter {
   display: flex;
@@ -114,7 +140,18 @@ h1 {
   margin-top: 4px;
 }
 
-.counter-box.total      { background: #1e3a8a; }
-.counter-box.pending    { background: #dc2626; }
-.counter-box.inprogress { background: #f59e0b; }
-.counter-box.resolved   { background: #16a34a; }
+.counter-box.total {
+  background: #1e3a8a;
+}
+
+.counter-box.pending {
+  background: #dc2626;
+}
+
+.counter-box.inprogress {
+  background: #f59e0b;
+}
+
+.counter-box.resolved {
+  background: #16a34a;
+}

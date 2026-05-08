@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "./components/Navbar";
 import CommunityFeed from "./components/CommunityFeed";
 import ComplaintForm from "./components/ComplaintForm.jsx";
 import ComplaintCounter from "./components/ComplaintCounter.jsx";
@@ -33,9 +34,12 @@ function App() {
 
   return (
     <div className="app">
-      <h1>SocietySync</h1>
+      <Navbar />
+
       <ComplaintForm addComplaint={addComplaint} />
+
       <ComplaintCounter complaints={complaints} />
+
       <div className="complaints-container">
         <CommunityFeed
           complaints={complaints}
