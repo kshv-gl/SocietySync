@@ -1,4 +1,5 @@
 import DeleteButton from "./DeleteButton";
+import UpvoteButton from "./UpvoteButton";
 
 function ComplaintCard({ complaint, deleteComplaint }) {
   return (
@@ -19,7 +20,8 @@ function ComplaintCard({ complaint, deleteComplaint }) {
 
       <small>{complaint.timestamp}</small>
 
-      <div style={{ marginTop: "10px" }}>
+      <div style={{ marginTop: "10px", display: "flex", gap: "10px" }}>
+        <UpvoteButton />
         <DeleteButton id={complaint.id} deleteComplaint={deleteComplaint} />
       </div>
     </div>

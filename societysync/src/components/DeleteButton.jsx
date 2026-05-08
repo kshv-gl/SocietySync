@@ -11,7 +11,7 @@ function DeleteButton({ id, deleteComplaint }) {
         cursor: "pointer",
       }}
     >
-      🗑️ Delete
+      Delete
     </button>
   );
 }
