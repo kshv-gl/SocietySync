@@ -54,7 +54,3 @@ Anyone can post a complaint by tagging the relevant department (Plumbing, Electr
 ---
 
 > *"Don't just complain — SocietySync it."* 🏢
-
-
-# 🏢 SocietySync
-### *One Society, One Voice*
