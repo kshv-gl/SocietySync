@@ -25,4 +25,36 @@ Anyone can post a complaint by tagging the relevant department (Plumbing, Electr
 
 ---
 
+## ✅ Features
+
+### 👤 Member 1 — Core Complaint System
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | **Complaint Form** | Submit a complaint with title, description, flat number, and department |
+| 2 | **Complaint Card** | Displays each complaint with department badge, flat number, and timestamp |
+| 3 | **Department Badge** | Color-coded tags — Plumbing 🔧, Electricity ⚡, Security 🛡️, Cleaning 🧹 |
+| 4 | **Navbar** | Top navigation bar with Login and Signup buttons |
+
+### 👤 Member 2 — Feed & Filtering
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | **Community Feed** | Renders all complaints as a list of cards |
+| 2 | **Filter by Department** | Dropdown to show only selected department complaints |
+| 3 | **Filter by Status** | Buttons to filter Pending / In Progress / Resolved |
+| 4 | **Search Bar** | Live keyword search across complaint titles |
+
+### 👤 You — Interactions & Logic ⭐
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | **Complaint Counter** | Live count of Total, Pending, In Progress, and Resolved complaints using `array.length` |
+| 2 | **Delete Complaint** | Remove any complaint from the feed using `filter by id` |
+| 3 | **Upvote Button** | Each complaint has an upvote counter using `useState + increment` |
+| 4 | **Status Cycle Button** | Click to cycle status Pending → In Progress → Resolved |
+
+---
+
 > *"Don't just complain — SocietySync it."* 🏢
+
+
+# 🏢 SocietySync
+### *One Society, One Voice*
