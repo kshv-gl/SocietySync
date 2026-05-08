@@ -27,7 +27,7 @@ Anyone can post a complaint by tagging the relevant department (Plumbing, Electr
 
 ## ✅ Features
 
-### 👤 Member 1 — Core Complaint System
+### 👤 Member 1 — Core Complaint System - Lalit Mittal
 | # | Feature | Description |
 |---|---------|-------------|
 | 1 | **Complaint Form** | Submit a complaint with title, description, flat number, and department |
@@ -35,7 +35,7 @@ Anyone can post a complaint by tagging the relevant department (Plumbing, Electr
 | 3 | **Department Badge** | Color-coded tags — Plumbing 🔧, Electricity ⚡, Security 🛡️, Cleaning 🧹 |
 | 4 | **Navbar** | Top navigation bar with Login and Signup buttons |
 
-### 👤 Member 2 — Feed & Filtering
+### 👤 Member 2 — Feed & Filtering - Harsh Sharma
 | # | Feature | Description |
 |---|---------|-------------|
 | 1 | **Community Feed** | Renders all complaints as a list of cards |
@@ -43,7 +43,7 @@ Anyone can post a complaint by tagging the relevant department (Plumbing, Electr
 | 3 | **Filter by Status** | Buttons to filter Pending / In Progress / Resolved |
 | 4 | **Search Bar** | Live keyword search across complaint titles |
 
-### 👤 You — Interactions & Logic ⭐
+### 👤 Member 3 — Interactions & Logic - Keshav Goel
 | # | Feature | Description |
 |---|---------|-------------|
 | 1 | **Complaint Counter** | Live count of Total, Pending, In Progress, and Resolved complaints using `array.length` |
